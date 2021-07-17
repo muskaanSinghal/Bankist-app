@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>experiment</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/png" href="dino.png" />
+    <link rel="stylesheet" href="experiment.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-welcome">
+        <div class="welcome">Log in to to get started ..<br /></div>
+        <div class="register">
+          Dont have an account?...<br />
+          create one &rarr; <button class="btn-register">Register</button>
+        </div>
+      </div>
+      <div class="logo"><img src="logo.png" /></div>
+      <form class="welbut">
+        <input class="user" type="text" placeholder="username" />
+        <input class="pin" type="password" placeholder="****" />
+        <button class="arr">&rarr;</button>
+      </form>
+    </header>
+
+    <!-- modal window -->
+    <div class="main-modal">
+      <form class="modal-window">
+        <div class="tilt">Owner :</div>
+        <input class="modal owner" type="text" placeholder="name" />
+        <div class="tilt">Movement :</div>
+        <input class="modal movement-modal" type="text" placeholder="a,b,c" />
+        <div class="tilt">Interest Rate :</div>
+        <input class="modal interest-rate" type="text" placeholder="%" />
+        <div class="tilt">Pin :</div>
+        <input class="modal pinmodal" type="password" placeholder="****" />
+        <div class="tilt">Currency :</div>
+        <input class="modal currency" type="text" placeholder="****" />
+        <button class="btn-submit">Submit.</button>
+      </form>
+    </div>
+
+    <!-- modal window ends -->
+
+    <div class="contain">
+      <main class="grid-container">
+        <!-- balance.. -->
+        <div class="balance">
+          <div class="left">
+            <div class="balance-label">CURRENT BALANCE</div>
+            <p id="head">As of 6/9/2021</p>
+          </div>
+          <div class="balance-value">0000$</div>
+        </div>
+
+        <!-- movements -->
+        <div class="movements">
+          <div class="movement-rows">
+            <div class="part">
+              <span class="type withdrawal">2 withdrawal</span>
+              <span class="date">6/09/2021</span>
+            </div>
+            <div class="amount">1300$</div>
+          </div>
+          <div class="movement-rows">
+            <div class="part">
+              <span class="type deposit">1 deposit</span>
+              <span class="date">6/09/2021</span>
+            </div>
+            <div class="amount">1300$</div>
+          </div>
+        </div>
+
+        <!-- operations -->
+        <div class="operations">
+          <div class="operation transfer-money">
+            <p id="transfer">Transfer Money</p>
+            <form class="forms">
+              <input type="text" class="input-Transfer-to" />
+              <input type="number" class="input-Transfer-amount" />
+              <button class="arrow btn-transfer">&rarr;</button>
+            </form>
+            <div class="templates">
+              <span>Transfer to </span><span>Amount</span>
+            </div>
+          </div>
+          <div class="operation request-loan">
+            <p id="request">Request Loan</p>
+            <form class="forms">
+              <input type="number" class="input-loan-amount" />
+              <button class="arrow btn-request">&rarr;</button>
+            </form>
+            <div class="templates"><span>Amount </span></div>
+          </div>
+          <div class="operation close-account">
+            <p id="close">Close Account</p>
+            <form class="forms">
+              <input type="text" class="input-cnfrm-user" />
+              <input type="password" class="input-cnfrm-pin" />
+              <button class="arrow btn-close">&rarr;</button>
+            </form>
+            <div class="templates">
+              <span>Confirm User </span><span>Confirm Pin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- summary -->
+        <div class="summary">
+          <div class="in">
+            <span class="bullet">In : </span
+            ><span class="in-value val">000$</span>
+          </div>
+          <div class="out">
+            <span class="bullet">Out : </span
+            ><span class="out-value val">000$</span>
+          </div>
+          <div class="interest">
+            <span class="bullet">Interest : </span
+            ><span class="interest-value val">000$</span>
+          </div>
+          <button class="sort">↻</button>
+
+          
+        </div>
+        <div class = "timer">you will be logged out in <span class ="remaining-time">00:00</span>
+      </main>
+    </div>
+
+    <script src="experiment.js"></script>
+  </body>
+</html>
